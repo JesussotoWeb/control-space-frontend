@@ -1,0 +1,240 @@
+.estatusResumen-container-Modal {
+    position: absolute;
+    top: 16px;
+    box-shadow: none;
+    right: -60%;
+    transition: 1s;
+    justify-content: flex-start;
+}
+.estatusResumen-container-Modal_avtive{
+    right: 16px;
+    transition: 1s;
+
+}
+
+.estatusResumen-Modal__textPricipal
+{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--amarillo-color);
+}
+
+.estatusResumen-Modal__textPricipal-marker
+{
+    color: var(--verde-color);
+    font-weight: 600;;
+}
+.estatusResumen-Modal__textPricipal-markerData
+{
+    color: var(--bg-panel);
+    margin-left: 10px;;
+}
+.estatusResumen-Modal__textPricipal-markerDataC
+{
+    color: var(--bg-panel);
+}
+.estatusResumen-Modal__datos
+{
+    border: 1px solid var(--amarillo-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 2em;
+}
+.estatusResumen-Modal__dato
+{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+.estatusResumen-Modal__datosPersonales-title
+{
+    color: var(--amarillo-color);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white-color);
+    padding: 0 15px;
+}
+.estatusResumen-Modal__datosPersonales-text
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bg-panel);
+    font-family: "Open Sans";
+    line-height: 1.8;
+    display: flex;
+    flex-wrap: wrap;
+}
+.estatusResumen-Modal__datosPersonales-marker
+{
+    color: var(--amarillo-color);
+    margin-right: 6px;
+}
+.estatusResumen-Modal__datos_restauracion
+{
+    padding: 20px 10px 0px 10px;
+    height: 273px;
+    margin-bottom: 0;
+}
+.estatusResumen-container-Modal__restauracion-fotos
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.estatusResumen-container-Modal__restauracion-fotocontainer
+{
+    width: 30%;
+    margin: 0 10px;
+    position: relative;
+
+}
+.estatusResumen-container-Modal__restauracion-foto{
+    width: 100%;
+    border-radius: 20px;
+    height: 80px;
+    object-fit: cover;
+}
+.estatusResumen-container-Modal__restauracion-foto-iconMas
+{
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    background-color: var(--white-color);
+    color: var(--bg-panel);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.499);
+    border-radius: 100px;
+    padding: 6px;
+    font-size: 20px;
+    opacity: .5;
+    transition: .5s;
+}
+.estatusResumen-container-Modal__restauracion-fotocontainer:hover .estatusResumen-container-Modal__restauracion-foto-iconMas{
+    opacity: 1;
+    padding: 10px;
+    font-size: 24px;
+    transition: .5s;
+    cursor: pointer;
+}
+.estatusResumen-Modal__restaruacionDescripcion
+{
+    margin-top: 1em;
+}
+.estatusResumen-Modal__restaruacioDatas
+{
+    position: relative;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.estatusResumen-Modal__restaruacionNombre
+{
+    background-color: var(--bg-panel);
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    bottom: 25px;
+    left: -20px;
+    font-family: "Open Sans";
+}
+.estatusResumen-Modal__restaruacionData
+{
+    font-family: "open sans";
+    font-weight: 600;
+    font-size: 15px;
+}
+.estatusResumen-Modal__restaruacionEstatus
+{
+    color: var(--white-color);
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Open sans";
+    border-radius: 100px 0 100px 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.estatusResumen-Modal__restaruacionEstatusTerminado
+{
+    background-color: var(--verde-color);
+
+}
+.estatusResumen-Modal__restaruacionEnProceso
+{
+    background-color: var(--amarillo-color);
+
+}
+.estatusResumen-Modal__containerRestauraciones
+{
+    height: 242px;
+    overflow: auto;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.estatusResumen-Modal__containerRestauraciones::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+    border-left: 4px solid #fff;
+
+
+}
+.estatusResumen-Modal__containerRestauraciones::-webkit-scrollbar-thumb {
+    background: var(--amarillo-color);
+    border-radius: 4px;
+    border-left: 4px solid #fff;
+
+}
+.estatusResumen-Modal__containerRestauraciones::-webkit-scrollbar-track {
+    background: #f6f6f6;
+    border-radius: 4px;
+}
+.estatusResumen-Modal__closeModal
+{
+    position: absolute;
+    bottom: 2px;
+    color: var(--amarillo-color);
+    cursor: pointer;
+}
+.estatusResumen__datosPersonales-titleIcon {
+    margin: 0 0 0 10px;
+    border: 1px solid #f1c40f;
+    padding: 0 4px;
+}
+.estatusResumen-Modal__datosPersonales-valorText {
+   
+    height: 28px;
+    overflow: auto;
+    padding-right: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+}
+
+.estatusResumen-Modal__datosPersonales-valorText::-webkit-scrollbar
+{
+    width: 5px;   
+    height: 10px;    
+}
+.estatusResumen-Modal__datosPersonales-valorText::-webkit-scrollbar-thumb
+{
+    background: var(--amarillo-color);
+    border-radius: 100px;
+   
+}
+.estatusResumen-Modal__datosPersonales-valorText::-webkit-scrollbar-track
+{
+    background: #f6f6f6;
+    border-radius: 100px;
+}

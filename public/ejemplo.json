@@ -1,0 +1,309 @@
+[
+    {
+        "Cedula": "26954927",
+        "Nombre": "Jesus",
+        "Apellido": "Soto",
+        "Direccion": "Carretera nacional san juan la villa, centro andres bello",
+        "Correo": "ejemplo.sd23.ejemplo@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Trajo varias bobinas",
+        "restauraciones":[
+            {
+                "_id": "1",
+                "Restaruracion": "Planta Electrica de 222 caballos",
+                "Descripcion": "El generador presenta problemas en una bobina de 70 caballos de fuerza",
+                "Fotos": ["https://img.freepik.com/psd-gratis/logo-carnival-ofrece-50-descuento_220664-2661.jpg", "https://img.freepik.com/vector-gratis/resumen-mega-ventas-fondo-liquido_23-2148247415.jpg", "https://img.freepik.com/vector-gratis/etiqueta-festival-musica-colorido-degradado_23-2149033270.jpg"],
+                "Fecha": "26-12-2022",
+                "Abono": 20,
+                "Presupuesto": 250,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            },
+            {
+                "_id": "2",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "26-12-2022",
+                "Abono": 20,
+                "Presupuesto": 250,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            }
+        ]
+        
+    },
+    {
+        "Cedula": "21033071",
+        "Nombre": "Gabriela",
+        "Apellido": "Aguilar",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "ejemplo.sd23.ejemplo@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones":[
+            {
+                "_id": "3",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El bobinado presenta serios problemas para funcionar, se recomienda utilizar medidas electricas",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "05-10-2022",
+                "Abono": 10,
+                "Presupuesto": 20,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            }
+        ]
+        
+    },
+    {
+        "Cedula": "7184923",
+        "Nombre": "Pedro",
+        "Apellido": "Miranda",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "ejemplo.sd23.ejemplo@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "4",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El motor electrico presenta problemas en uno de sus ejes",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "20-06-2022",
+                "Abono": 200,
+                "Presupuesto": 200,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            }
+        ]
+        
+    },
+    {
+        "Cedula": "26354117",
+        "Nombre": "Ramon",
+        "Apellido": "Villalobos",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "ramon123@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones":[
+            {
+                "_id": "5",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 150,
+                "Presupuesto": 200,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            }
+        ]
+        
+    },
+    {
+        "Cedula": "23358115",
+        "Nombre": "Gabriel",
+        "Apellido": "Viloria",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "vilo0112@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "6",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "Terminado",
+                "Pago_completado": "Pendiente"
+            }
+        ]
+    },
+    {
+        "Cedula": "18050078",
+        "Nombre": "Jose",
+        "Apellido": "Andres",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "andresJose@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "7",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "Terminado",
+                "Pago_completado": "Completado"
+            }
+        ]
+    },
+    {
+        "Cedula": "28050078",
+        "Nombre": "Jose",
+        "Apellido": "Andres",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "andresJose@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "8",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "Terminado",
+                "Pago_completado": "Completado"
+            }
+        ]
+    },
+    {
+        "Cedula": "29959078",
+        "Nombre": "Jose",
+        "Apellido": "Andres",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "andresJose@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "9",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            }
+        ]
+    },
+    {
+        "Cedula": "21119078",
+        "Nombre": "XXXX",
+        "Apellido": "Andres",
+        "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
+        "Correo": "andresJose@gmail.com",
+        "Telefono": {
+            "Pais": "+58",
+            "numero": 1234567899
+        },
+        "Observaciones": "Lorem ipsum dolor, sit amet",
+        "restauraciones": [
+            {
+                "_id": "10",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            },
+            {
+                "_id": "11",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            },
+            {
+                "_id": "12",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            },
+            {
+                "_id": "13",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            },
+            {
+                "_id": "14",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Pendiente"
+            },
+            {
+                "_id": "15",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            },
+            {
+                "_id": "16",
+                "Restaruracion": "Generador Electrico",
+                "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
+                "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
+                "Fecha": "02-06-2022",
+                "Abono": 10,
+                "Presupuesto": 60,
+                "Estatus": "En Proceso",
+                "Pago_completado": "Completado"
+            }
+        ]
+    }
+
+]
