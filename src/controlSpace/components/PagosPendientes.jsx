@@ -1,10 +1,15 @@
 import {IoIosEye} from "react-icons/io";
 import {RxCounterClockwiseClock} from "react-icons/rx";
-
+import ReactDOM from "react-dom";
 import { useEffect, useState } from "react";
+import DetallesRegistro from "./modales/DetallesRegistro";
 
 const PagosPendientes = () => {
   const [apiData, setApiData] = useState([]);
+  const [modalRegistros, setModalRegistros] = useState(false);
+  const [idoUser, setIdoUser] = useState(0);
+
+
   useEffect(() => {
     
     fetch("http://127.0.0.1:5173/ejemplo.json")
@@ -19,8 +24,8 @@ const PagosPendientes = () => {
 apiData.map((content) => {
     content.restauraciones.filter((restauracion) => {
       if(restauracion.Pago_completado == "Pendiente"){
-        console.log(restauracion.Pago_completado)
         listaUsuarios.push({
+          cedula: content.Cedula,
           nombre: content.Nombre,
           apellido: content.Apellido,
           restauraciones: content.restauraciones.length,
@@ -34,13 +39,16 @@ apiData.map((content) => {
       }
     })
   })
-console.log(listaUsuarios)
-/* console.log(apiData) */
   const verificarPagoCompletado = (opc) => {
     if(opc == "Pendiente"){
       return <RxCounterClockwiseClock className="btn-check-iconNoCompletado"/>
     }
   }
+  const eventoLevantarModalRegistros = (user_id) => {
+    setModalRegistros(true)
+    setIdoUser(user_id)
+  }
+
   return (
     <div className="pagos-faltantes">
           <h2 className="pagos-faltantes__title">Pagos Pendientes</h2>
@@ -60,7 +68,7 @@ console.log(listaUsuarios)
                   return (
                     <tr key={index} className="pagos-faltantes__fila">
                       <td className="pagos-faltantes__fila-columna">
-                        <span className="pagos-faltantes__btnMostrarData"><IoIosEye/></span>{verificarPagoCompletado(content.pago_completado)}<i className="pagos-faltantes__btnMostrarData-i">{content.pago_completado}</i></td>
+                        <span onClick={() => eventoLevantarModalRegistros(content.cedula)} className="pagos-faltantes__btnMostrarData"><IoIosEye/></span>{verificarPagoCompletado(content.pago_completado)}<i className="pagos-faltantes__btnMostrarData-i">{content.pago_completado}</i></td>
                       <td className="pagos-faltantes__fila-columna">{content.nombre} {content.apellido}</td>
                       <td className="pagos-faltantes__fila-columna">{content.restauraciones}</td>
                       <td className="pagos-faltantes__fila-columna">{content.observaciones}</td>
@@ -74,6 +82,9 @@ console.log(listaUsuarios)
             
             </tbody>
           </table>
+          {
+            modalRegistros ? ReactDOM.createPortal(<DetallesRegistro userId={idoUser} />, document.querySelector("#modal-registros")) : ""
+            }
     </div>
   )
 }

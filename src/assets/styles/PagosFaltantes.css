@@ -104,16 +104,6 @@
     z-index: 0;
 }
 
-.btn-check-iconCompletado
-{
-    color: #00ff00;
-    font-size: 25px;
-}
-.btn-check-iconNoCompletado
-{
-    font-size: 25px;
-    color: #399ccd;
-}
 .pagos-faltantes__btnMostrarData-i
 {
     font-style: normal;

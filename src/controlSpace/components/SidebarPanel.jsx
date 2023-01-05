@@ -5,6 +5,8 @@ import '../../assets/styles/dashboard.css';
 import "../../assets/styles/ModalsResumenEstatus.css";
 import "../../assets/styles/Galeria.css";
 import "../../assets/styles/PagosFaltantes.css";
+import "../../assets/styles/ModalRegistros.css";
+
 
 
 import logo from '../../assets/imgs/logo-2.png';

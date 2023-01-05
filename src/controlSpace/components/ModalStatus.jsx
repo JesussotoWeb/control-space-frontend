@@ -123,7 +123,7 @@ const ModalStatus = ({apiDataUsers, idsUser, mostrarModal, actualizarEstadoModal
                                             <span className="estatusResumen-Modal__datosPersonales-valorText">{conten.Descripcion}</span>
                                         </p>
                                         <div className="estatusResumen-Modal__restaruacioDatas">
-                                            <span className="estatusResumen-Modal__restaruacionNombre">{conten.Restaruracion}</span>
+                                            <span className="estatusResumen-Modal__restaruacionNombre">{conten.Restauracion}</span>
                                             <span className="estatusResumen-Modal__restaruacionData">{conten.Fecha}</span>
                                             <span className="estatusResumen-Modal__restaruacionData">Abono: {conten.Abono}$</span>
                                             <span className="estatusResumen-Modal__restaruacionData">Presupuesto: {conten.Presupuesto}$</span>

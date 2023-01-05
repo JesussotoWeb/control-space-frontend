@@ -125,11 +125,12 @@ const EstatusRegistros = () => {
             <div className="estatusResumen__tasksContainer">
             {
                 filterRestaruacionesPag().map((item) => {
+                    console.log(item)
                     return (
                         <div key={item._id} className="estatusResumen__task">
                             <a onClick={() => prepararModal(item._id, item.cedula)} className="estatusResumen__taskStatusLink">Ver Estatus <BiLinkExternal /></a>
                             <p className="estatusResumen__taskText">
-                                <span className="estatusResumen__taskNameUser">{`${item.nombre} ${item.apellido}`}</span>#{item.Restaruracion}
+                                <span className="estatusResumen__taskNameUser">{`${item.nombre} ${item.apellido}`}</span>#{item.Restauracion}
                             </p>
                             <span 
                             className={`estatusResumen__taskStatus ${verificarEstatus(item.Estatus)}`}>

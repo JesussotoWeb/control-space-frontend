@@ -154,3 +154,14 @@ body{
         width: 100%;
     }
 }
+
+.btn-check-iconCompletado
+{
+    color: #00ff00;
+    font-size: 25px;
+}
+.btn-check-iconNoCompletado
+{
+    font-size: 25px;
+    color: #399ccd;
+}

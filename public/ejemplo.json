@@ -1,6 +1,6 @@
 [
     {
-        "Cedula": "26954927",
+        "Cedula": 26954927,
         "Nombre": "Jesus",
         "Apellido": "Soto",
         "Direccion": "Carretera nacional san juan la villa, centro andres bello",
@@ -12,8 +12,8 @@
         "Observaciones": "Trajo varias bobinas",
         "restauraciones":[
             {
-                "_id": "1",
-                "Restaruracion": "Planta Electrica de 222 caballos",
+                "_id": 1,
+                "Restauracion": "Planta Electrica de 222 caballos",
                 "Descripcion": "El generador presenta problemas en una bobina de 70 caballos de fuerza",
                 "Fotos": ["https://img.freepik.com/psd-gratis/logo-carnival-ofrece-50-descuento_220664-2661.jpg", "https://img.freepik.com/vector-gratis/resumen-mega-ventas-fondo-liquido_23-2148247415.jpg", "https://img.freepik.com/vector-gratis/etiqueta-festival-musica-colorido-degradado_23-2149033270.jpg"],
                 "Fecha": "26-12-2022",
@@ -23,8 +23,8 @@
                 "Pago_completado": "Pendiente"
             },
             {
-                "_id": "2",
-                "Restaruracion": "Generador Electrico",
+                "_id": 2,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "26-12-2022",
@@ -37,7 +37,7 @@
         
     },
     {
-        "Cedula": "21033071",
+        "Cedula": 21033071,
         "Nombre": "Gabriela",
         "Apellido": "Aguilar",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -49,8 +49,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones":[
             {
-                "_id": "3",
-                "Restaruracion": "Generador Electrico",
+                "_id": 3,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El bobinado presenta serios problemas para funcionar, se recomienda utilizar medidas electricas",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "05-10-2022",
@@ -63,7 +63,7 @@
         
     },
     {
-        "Cedula": "7184923",
+        "Cedula": 21033077,
         "Nombre": "Pedro",
         "Apellido": "Miranda",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -75,8 +75,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "4",
-                "Restaruracion": "Generador Electrico",
+                "_id": 4,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El motor electrico presenta problemas en uno de sus ejes",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "20-06-2022",
@@ -89,7 +89,7 @@
         
     },
     {
-        "Cedula": "26354117",
+        "Cedula": 26354117,
         "Nombre": "Ramon",
         "Apellido": "Villalobos",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -101,8 +101,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones":[
             {
-                "_id": "5",
-                "Restaruracion": "Generador Electrico",
+                "_id": 5,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -115,7 +115,7 @@
         
     },
     {
-        "Cedula": "23358115",
+        "Cedula": 23358115,
         "Nombre": "Gabriel",
         "Apellido": "Viloria",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -127,8 +127,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "6",
-                "Restaruracion": "Generador Electrico",
+                "_id": 6,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "Cedula": "18050078",
+        "Cedula": 18050078,
         "Nombre": "Jose",
         "Apellido": "Andres",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -152,8 +152,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "7",
-                "Restaruracion": "Generador Electrico",
+                "_id": 7,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -165,7 +165,7 @@
         ]
     },
     {
-        "Cedula": "28050078",
+        "Cedula": 28050078,
         "Nombre": "Jose",
         "Apellido": "Andres",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -177,8 +177,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "8",
-                "Restaruracion": "Generador Electrico",
+                "_id": 8,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -190,7 +190,7 @@
         ]
     },
     {
-        "Cedula": "29959078",
+        "Cedula": 29959078,
         "Nombre": "Jose",
         "Apellido": "Andres",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -202,8 +202,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "9",
-                "Restaruracion": "Generador Electrico",
+                "_id": 9,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -215,7 +215,7 @@
         ]
     },
     {
-        "Cedula": "21119078",
+        "Cedula": 21119078,
         "Nombre": "XXXX",
         "Apellido": "Andres",
         "Direccion": "Lorem ipsum dolor, sit amet consectetur adipisi",
@@ -227,8 +227,8 @@
         "Observaciones": "Lorem ipsum dolor, sit amet",
         "restauraciones": [
             {
-                "_id": "10",
-                "Restaruracion": "Generador Electrico",
+                "_id": 10,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -238,8 +238,8 @@
                 "Pago_completado": "Completado"
             },
             {
-                "_id": "11",
-                "Restaruracion": "Generador Electrico",
+                "_id": 11,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -249,8 +249,8 @@
                 "Pago_completado": "Completado"
             },
             {
-                "_id": "12",
-                "Restaruracion": "Generador Electrico",
+                "_id": 12,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -260,8 +260,8 @@
                 "Pago_completado": "Pendiente"
             },
             {
-                "_id": "13",
-                "Restaruracion": "Generador Electrico",
+                "_id": 13,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -271,8 +271,8 @@
                 "Pago_completado": "Pendiente"
             },
             {
-                "_id": "14",
-                "Restaruracion": "Generador Electrico",
+                "_id": 14,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -282,8 +282,8 @@
                 "Pago_completado": "Pendiente"
             },
             {
-                "_id": "15",
-                "Restaruracion": "Generador Electrico",
+                "_id": 15,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
@@ -293,8 +293,8 @@
                 "Pago_completado": "Completado"
             },
             {
-                "_id": "16",
-                "Restaruracion": "Generador Electrico",
+                "_id": 16,
+                "Restauracion": "Generador Electrico",
                 "Descripcion": "El generador presenta problemas en una bobina de 24cc y una de 44fr",
                 "Fotos": ["https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350", "https://random.imagecdn.app/500/350"],
                 "Fecha": "02-06-2022",
