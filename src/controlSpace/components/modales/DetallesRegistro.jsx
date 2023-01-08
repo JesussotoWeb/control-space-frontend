@@ -9,10 +9,9 @@ import Galeria from "./Galeria";
 
 
 const DetallesRegistro = ({userId}) => {
-	const [first, setfirst] = useState(true);
 	const [estatus, setEstatus] = useState("Terminado");
 	const [campana, setCampana] = useState(false);
-	const [idUser, setIdUser] = useState(26954927);
+	const [idUser, setIdUser] = useState(21119078);
 	const [apiData, setApiData] = useState([]);
 	const [mostrarModalGallery, setMostrarModalGallery] = useState(false);
 	const [imagenesModal, setImagenesModal] = useState({
@@ -112,68 +111,69 @@ const DetallesRegistro = ({userId}) => {
           </div>
         </div>
       </div>
-      <div className="modal-registros__restauracionesContainer">
-		{
-			restauraciones.map((conten, index) => {
-				console.log(conten);
-				return (
-					<div key={index} className="modal-registros__restauraciones">
-						<h2 className="modal-registros__datosTitle">Datos de Restauracion</h2>
+	  <div assName="modal-registros__restauracionesDiv">
+	  	<div className="modal-registros__restauracionesContainer">
+			{
+				restauraciones.map((conten, index) => {
+					console.log(conten);
+					return (
+						<div key={index} className="modal-registros__restauraciones">
+							<h2 className="modal-registros__datosTitle">Datos de Restauracion</h2>
 
-						<div className="modal-registros__restauracionDatos">
-							<h3 className="modal-registros__dato">
-								<span className="modal-registros__dato-marker">Restauracion: </span> 
-								{conten.Restauracion}
-							</h3>
-							<h3 className="modal-registros__dato">
-								<span className="modal-registros__dato-marker">Descripcion: </span> 
-								{conten.Descripcion}
-							</h3>
-							<h3 className="modal-registros__dato modal-registros__dato-abono">
-								<span className="modal-registros__dato-marker">Abono: </span> 
-								{conten.Abono}$
-							</h3>
-							<h3 className="modal-registros__dato modal-registros__dato-presupuesto">
-								<span className="modal-registros__dato-marker">Presupuesto: </span> 
-								{conten.Presupuesto}$
-							</h3>
-							<h3 className="modal-registros__dato modal-registros__dato-fecha">
-								<span className="modal-registros__dato-marker">Fecha: </span> 
-								{conten.Fecha}
-							</h3>
-							<div className="modal-registros__restauracionFotosContainer">
-								<h3 className="modal-registros__dato modal-registros__datoFotos">
-									<span className="modal-registros__dato-marker">Fotos: </span> 
+							<div className="modal-registros__restauracionDatos">
+								<h3 className="modal-registros__dato">
+									<span className="modal-registros__dato-marker">Restauracion: </span> 
+									{conten.Restauracion}
 								</h3>
-								<div className="modal-registros__restauracionFotos">
-									{mostrarFotos(conten.Fotos, index)}
+								<h3 className="modal-registros__dato">
+									<span className="modal-registros__dato-marker">Descripcion: </span> 
+									{conten.Descripcion}
+								</h3>
+								<h3 className="modal-registros__dato modal-registros__dato-abono">
+									<span className="modal-registros__dato-marker">Abono: </span> 
+									{conten.Abono}$
+								</h3>
+								<h3 className="modal-registros__dato modal-registros__dato-presupuesto">
+									<span className="modal-registros__dato-marker">Presupuesto: </span> 
+									{conten.Presupuesto}$
+								</h3>
+								<h3 className="modal-registros__dato modal-registros__dato-fecha">
+									<span className="modal-registros__dato-marker">Fecha: </span> 
+									{conten.Fecha}
+								</h3>
+								<div className="modal-registros__restauracionFotosContainer">
+									<h3 className="modal-registros__dato modal-registros__datoFotos">
+										<span className="modal-registros__dato-marker">Fotos: </span> 
+									</h3>
+									<div className="modal-registros__restauracionFotos">
+										{mostrarFotos(conten.Fotos, index)}
+									</div>
 								</div>
+								<div className="modal-registros__restauracionMetaData">
+									<h3>
+										<span className="modal-registros__dato-marker modal-registros__dato-status">Estatus: </span>
+										<span className={`modal-registros__dato-marker ${conten.Estatus == "Terminado" ? "modal-registros__dato-status_terminado" : "modal-registros__dato-status_noTerminado"}`}>{estatus == "Terminado" ? conten.Estatus : conten.Estatus}</span>
+									</h3>
+									<h3>
+										<span className="modal-registros__dato-marker">Pago Completado: </span>
+										{conten.Pago_completado == "Completado" ? <BsCheck2Circle className='btn-check-iconCompletado modal-registros__btnPagoCompletado' /> : <RxCounterClockwiseClock className='btn-check-iconNoCompletado' />}
+										
+									</h3>
+								</div>
+								<FaBell onClick={() => setCampana(!campana)} className={`modal-registros__restauracionCampana ${campana ? "modal-registros__restauracionCampana_process" : ""}`} />
+								{campana ? <BiLoaderCircle className="loading modal-registros__restauracionCampana_animate"/> : ""}
 							</div>
-							<div className="modal-registros__restauracionMetaData">
-								<h3>
-									<span className="modal-registros__dato-marker modal-registros__dato-status">Estatus: </span>
-									<span className={`modal-registros__dato-marker ${conten.Estatus == "Terminado" ? "modal-registros__dato-status_terminado" : "modal-registros__dato-status_noTerminado"}`}>{estatus == "Terminado" ? conten.Estatus : conten.Estatus}</span>
-								</h3>
-								<h3>
-									<span className="modal-registros__dato-marker">Pago Completado: </span>
-									{conten.Pago_completado == "Completado" ? <BsCheck2Circle className='btn-check-iconCompletado modal-registros__btnPagoCompletado' /> : <RxCounterClockwiseClock className='btn-check-iconNoCompletado' />}
-									
-								</h3>
-							</div>
-							<FaBell onClick={() => setCampana(!campana)} className={`modal-registros__restauracionCampana ${campana ? "modal-registros__restauracionCampana_process" : ""}`} />
-							{campana ? <BiLoaderCircle className="loading modal-registros__restauracionCampana_animate"/> : ""}
+							
 						</div>
-						
-					</div>
-				)
-			})
-		}
-       {
-            mostrarModalGallery ? ReactDOM.createPortal(
-            <Galeria ocultarGalleryModal={ocultarGalleryModal} imagenesModal={imagenesModal}/>, document.querySelector("#modal-gallery")) : ""
+					)
+				})
+			}
+			{
+            	mostrarModalGallery ? ReactDOM.createPortal(
+            	<Galeria ocultarGalleryModal={ocultarGalleryModal} imagenesModal={imagenesModal}/>, document.querySelector("#modal-gallery")) : ""
             }
-		
-      </div>
+      	</div>
+	</div>
     </div>
   )
 }
