@@ -6,6 +6,7 @@ import "../../assets/styles/ModalsResumenEstatus.css";
 import "../../assets/styles/Galeria.css";
 import "../../assets/styles/PagosFaltantes.css";
 import "../../assets/styles/ModalRegistros.css";
+import "../../assets/styles/TablaRegistros.css";
 
 
 
@@ -54,13 +55,27 @@ function SidebarPanel() {
         </div>
         <nav>
           <ul className='nav'>
-            <li className='nav__item'><Link className='nav__item_link' to="/dashboard">Resume</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/registrar">Registrar</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/buscar">Buscar</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/configuracion">Configuración</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/perfil">Mi Perfil</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/informe">Generar Informe</Link></li>
-            <li className='nav__item'><Link className='nav__item_link' to="/salir">Salir</Link></li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/dashboard">Resume</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/registrar">Registrar</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/registros">Ver Registros</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/configuracion">Configuración</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/perfil">Mi Perfil</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/informe">Generar Informe</Link>
+            </li>
+            <li className='nav__item'>
+              <Link className='nav__item_link' to="/salir">Salir</Link>
+            </li>
           </ul>
         </nav>
       </div>

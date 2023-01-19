@@ -1,0 +1,469 @@
+.form-registrar
+{
+    width: 100%;
+    height: 100%;
+    margin: 6em 1.5em;
+}
+
+.form__dataContainner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 65%;
+}
+.form__data{
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 2em;
+}
+.form__datosPersonales
+{
+    position: relative;
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 1.5em 2em;
+    border: 1px solid var(--amarillo-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.8em;
+    justify-content: space-between;
+}
+.form__datosPersonalesTitle
+{
+    font-size: 18px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--amarillo-color);
+    font-weight: 400;
+    background-color: var(--white-color);
+    padding: 0 15px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: 1px solid var(--amarillo-color);
+}
+.form__inputs
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+.form__inputs-nombre, .form__inputs-apellido, .form__inputs-email, .form__inputs-telefono, .form__inputs-fotos, .form__inputs-fecha, .form__inputs-abono, .form__inputs-presupuesto, .form__inputs-status, .form__inputs-pago
+{
+    width: 48%;
+}
+.form__input
+{
+    color: var(--bg-panel);
+    font-size: 18px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0px rgb(0 0 0 / 41%);
+    border: 1px solid transparent;
+}
+.form__input:focus-visible
+{
+    outline: none;
+    border: 1px solid var(--amarillo-color);
+}
+.form__input::placeholder
+{
+    color: var(--placeholder-color);
+}
+.form__input-required::before
+{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--amarillo-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+}
+.form__inputIcon
+{
+    color: var(--placeholder-color);
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+}
+.form__inputs-status{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em
+}
+.form__inputs-statusRadio
+{
+    display: none;
+}
+.form__inputs-statusRadios
+{
+    width: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5em;
+}
+.form__label {
+    width: 50%;
+}
+::-webkit-datetime-edit-text { color: var(--placeholder-color);}
+::-webkit-datetime-edit-month-field { color: var(--placeholder-color); }
+::-webkit-datetime-edit-day-field { color: var(--placeholder-color); }
+::-webkit-datetime-edit-year-field { color: var(--placeholder-color);; }
+.form__inputDate::-webkit-calendar-picker-indicator{
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    width: 30px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+}
+.form__label-foto
+{
+    cursor: pointer;
+    color: var(--placeholder-color);
+    height: 46px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form__label-foto::-webkit-scrollbar {
+    width: 5px;     
+    height: 5px;    
+}
+.form__label-foto::-webkit-scrollbar-thumb {
+    background: var(--amarillo-color);
+    border-radius: 100px;
+
+}
+.form__label-foto::-webkit-scrollbar-track {
+    background: #d5d5d5;
+    border-radius: 4px;
+}
+.form__label-fotoInable{
+    width: 0;
+    height: 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.fotosCircle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__input-select
+{
+    appearance: none;
+    color: var(--placeholder-color);
+    cursor: pointer;
+}
+.form__input-select-arrow
+{
+    transform: rotate(180deg);
+}
+.labels-radio
+{
+    cursor: pointer;
+    background-color: var(--white-color);
+    padding: 5px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.285);
+    border-radius: 100px;
+    border: 1px solid transparent;
+    transition: .6s;
+    z-index: 5;
+}
+.labels-radio:hover
+{
+    border: 1px solid var(--amarillo-color);
+    transition: .6s;
+}
+.labels-radio:active
+{
+    transform: scale(0.8);
+}
+.form__inputs-statusRadio1:checked ~ .labels-radio1, .form__inputs-statusRadio2:checked ~ .labels-radio2, .form__inputs-statusRadio3:checked ~ .labels-radio3{
+    transform: scale(1.2);
+    border: 1px solid var(--amarillo-color);
+
+
+}
+.panel-registros
+{
+    width: 35%;
+}
+.labels-radio1::before, .labels-radio2::before, .labels-radio3::before{
+    bottom: 5px;
+    content: "";
+    background-color: var(--verde-color);
+    position: absolute;
+    padding: 4px;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    opacity: 0;
+}
+.form__inputs-statusRadio1:checked ~ .labels-radio1::before, .form__inputs-statusRadio2:checked ~ .labels-radio2::before, .form__inputs-statusRadio3:checked ~ .labels-radio3::before
+{
+    bottom: -10px;
+    transition: .5s;
+    opacity: 1;
+
+}
+
+
+
+.panel-registros__ajustes {
+    background-color: #fff;
+    box-shadow: 0 0 21px 0px rgb(0 0 0 / 11%);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.panel-registros__submitContainer {
+    padding: 20px;
+}
+.panel-registros__title
+{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.panel-registros__controlPanel-restauraciones
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck
+{
+    appearance: none;
+    cursor: pointer;
+   
+    padding: 1em;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    transition: .5s;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.124);
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck:hover
+{
+    box-shadow: 0 0 5px 1px var(--amarillo-color);
+
+    transition: .5s;
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck::before{
+    content: "";
+    
+    width: 35px;
+    position: absolute;
+    height: 35px;
+    border-radius: 100px;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck:active::before
+{
+    transition: .3s;
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck:checked
+{
+    background-color: var(--amarillo-color);
+}
+.controlPanel-restauraciones__controlPanel-restauracionesCheck:checked::before 
+{
+    transition: .3s;
+    left: auto;
+    right: 0;
+}
+.sweetCheck
+{
+    background-color: #f6f6f6;
+    cursor: pointer;
+    width: 65px;
+    height: 30px;
+    border-radius: 100px;
+    position: relative;
+    transition: .5s;
+}
+.sweetCheck__input
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    transition: .4s;
+
+}
+.sweetCheck__circle
+{
+    width: 25px;
+    height: 25px;
+    background-color: #dddddd;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transition: .4s;
+
+
+    transform: translateY(-50%);
+}
+
+.sweetCheck__input:checked ~ .sweetCheck__circle
+{
+    justify-content: end;
+    transition: .4s;
+    left: 35px;
+    background-color: var(--white-color);
+}
+
+
+.sweetCheck:has(> .sweetCheck__input:checked) {
+    background-color: var(--amarillo-color);
+    transition: .7s;
+    transition-delay: .1s;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.092) inset;
+}
+.panel-registros__listRestaruaciones
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    max-height: 50vh;
+    overflow: auto;
+}
+.panel-registros__listRestaruaciones-agregar{
+    background-color: var(--bg-panel);
+    border: none;
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px 15px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+.panel-registros__listRestaruaciones-agregar:hover
+{
+    border: 1px solid var(--bg-panel);
+    background-color: var(--white-color);
+    color: var(--bg-panel);
+    transition: .5s;
+}
+.panel-registros__restaruacionesContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.panel-registros__resConten
+{
+    border: 1px solid var(--amarillo-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    column-gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.panel-registros__resConten_active
+{
+    background-color: #73c6b6;
+    color: var(--white-color);
+}
+.panel-registros__resConten:hover{
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.133);
+}
+.panel-registros__resConten-title
+{
+    font-size: 15px;
+}
+.panel-registros__resContenLine
+{
+    width: 100%;
+    padding: 5px;
+    background-color: #dddddd;
+    border-radius: 100px;
+}
+.panel-registros__resContenLineMit
+{
+    width: 48%;
+
+}
+.panel-registros__submitContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-registros__submit
+{
+    all: unset;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    color: var(--white-color);
+    background-color: var(--bg-panel);
+    border-radius: 15px;
+    padding: 1em 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid transparent;
+
+}
+.panel-registros__submit:hover
+{
+    transition: .5s;
+    background-color: #f6f6f6;
+    border: 1px solid var(--bg-panel);
+    color: var(--bg-panel);
+
+}
+.panel-registros__submit:active{
+    transform: scale(.9);
+}

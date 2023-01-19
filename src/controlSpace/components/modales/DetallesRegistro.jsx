@@ -6,7 +6,7 @@ import {RxCounterClockwiseClock} from "react-icons/rx";
 import {FaBell, FaRegBell, FaBellSlash} from "react-icons/fa";
 import { BiLoaderCircle, BiZoomIn } from "react-icons/bi";
 import Galeria from "./Galeria";
-
+import { Link } from "react-router-dom";
 
 const DetallesRegistro = ({userId}) => {
 	const [estatus, setEstatus] = useState("Terminado");
@@ -61,12 +61,6 @@ const DetallesRegistro = ({userId}) => {
         setMostrarModalGallery(opc)
     }
 
-    const estyleModalClose = (opc) => {
-        setMostrarModalStyles(opc);
-            setTimeout(() => {
-                actualizarEstadoModal(opc);
-            },500);
-    }
   return (
     <div className="modal-registros">
       <div className="modal-registros__datosPersonalesContainer">
@@ -106,12 +100,15 @@ const DetallesRegistro = ({userId}) => {
 			}
         </div>
         <div className="modal-registros__botonEditarContainer">
-          <div className="modal-registros__botonEditar">
-            <span className="modal-registros__botonEditar-text"><FiEdit className="modal-registros__botonEditar-textIcon"/> Editar Registro</span>
+          <div className="">
+			<Link className='modal-registros__botonEditar' to={`/edit-user/${idUser}`}>
+				<FiEdit className="modal-registros__botonEditar-textIcon" /> 
+				Editar Registros
+			</Link>
           </div>
         </div>
       </div>
-	  <div assName="modal-registros__restauracionesDiv">
+	  <div className="modal-registros__restauracionesDiv">
 	  	<div className="modal-registros__restauracionesContainer">
 			{
 				restauraciones.map((conten, index) => {

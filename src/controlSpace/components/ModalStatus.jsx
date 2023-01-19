@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import { BiZoomIn, BiXCircle } from "react-icons/bi";
 import Galeria from "./modales/Galeria";
 import ReactDOM from 'react-dom';
+import BotonEje from "./botones/BotonEje";
 
 const ModalStatus = ({apiDataUsers, idsUser, mostrarModal, actualizarEstadoModal}) => {
     const [mostrarModalStyles, setMostrarModalStyles] = useState(false);
@@ -21,7 +22,15 @@ const ModalStatus = ({apiDataUsers, idsUser, mostrarModal, actualizarEstadoModal
 
     const mostrarData = () => {
 
-        return <h2 className="estatusResumen-Modal__textPricipal">Status de <span className="estatusResumen-Modal__textPricipal-markerData">{dataShowUser.nombre} {dataShowUser.apellido}</span><span className="estatusResumen-Modal__textPricipal-marker">#</span><span className="estatusResumen-Modal__textPricipal-markerDataC">{dataShowUser.cedula}</span></h2>;
+        return <h2 className="estatusResumen-Modal__textPricipal">Status de <span className="estatusResumen-Modal__textPricipal-markerData">{dataShowUser.nombre} {dataShowUser.apellido}</span><span className="estatusResumen-Modal__textPricipal-marker">#</span><span className="estatusResumen-Modal__textPricipal-markerDataC">{dataShowUser.cedula}</span>
+        <BotonEje 
+        url={dataShowUser.cedula} 
+        customClass="pagos-faltantes__btnMostrarData"
+        top={40}
+        left={40}
+        size={25}
+        />
+        </h2>;
     }
     apiDataUsers.map((items) => {
 

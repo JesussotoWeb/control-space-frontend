@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 3em;
+    width: 85%;
 }
 .modal-registros__datosPersonalesContainer
 {
@@ -16,7 +17,7 @@
 .modal-registros__datosPersonales, .modal-registros__restauraciones
 {
     position: relative;
-    width: 45em;
+    width: 50%;
     background-color: var(--white-color);
     border-radius: 10px;
     padding: 1.5em 2em;
@@ -27,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 23em;
+    width: 50%;
 }
 .modal-registros__botonEditar
 {
@@ -42,6 +43,9 @@
     cursor: pointer;
     transition: .5s;
     box-shadow: 0 0 21px 3px rgb(0 0 0 / 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-registros__botonEditar:hover
 {
@@ -212,4 +216,22 @@
 
 {
     position: relative;
+}
+.modal-registros__restauracionesDiv
+{
+    padding: 20px 0;
+    overflow: auto;
+}
+.modal-registros__restauracionesDiv::-webkit-scrollbar {
+    width: 5px;     
+    height: 5px;    
+}
+.modal-registros__restauracionesDiv::-webkit-scrollbar-thumb {
+    background: var(--amarillo-color);
+    border-radius: 100px;
+
+}
+.modal-registros__restauracionesDiv::-webkit-scrollbar-track {
+    background: #d5d5d5;
+    border-radius: 4px;
 }

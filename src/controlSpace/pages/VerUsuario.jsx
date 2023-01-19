@@ -1,14 +1,12 @@
 import SidebarPanel from "../components/SidebarPanel";
 import DetallesRegistro from "../components/modales/DetallesRegistro";
-const Buscar = () => {
+const VerUsuario = () => {
   return (
     <div className='dashboard'>
         <SidebarPanel />
-        <div>
-            <DetallesRegistro />
-        </div>
+        <DetallesRegistro />
     </div>
   )
 }
 
-export default Buscar;
+export default VerUsuario;

@@ -1,0 +1,89 @@
+.registros{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5em;
+    gap: 3em;
+}
+.tabla-registros {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 21px 0px rgb(0 0 0 / 11%);
+    border-radius: 15px;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: 73vmin;
+    margin: 0 1.5em;
+    margin-bottom: -40px;
+    overflow: auto;
+}
+.registros__rowSearch {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.registros__rowSearch-text {
+    color: var(--amarillo-color);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.registros__rowSearch-input {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    position: relative;
+
+}
+.registros__rowSearch-inputSearch, .registros__rowSearch-inputDate {
+    border: none;
+    color: var(--bg-panel);
+    font-size: 18px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.413);
+    border: 1px solid transparent;
+}
+.registros__rowSearch-inputSearch:focus, .registros__rowSearch-inputDate:focus
+{
+    border: 1px solid var(--amarillo-color);
+}
+.registros__rowSearch-inputSearch:focus-visible, .registros__rowSearch-inputDate:focus-visible{
+    outline: none;
+}
+.registros__rowSearch-inputSearch::placeholder, .registros__rowSearch-inputDate::placeholder{
+    color: var(--placeholder-color);
+}
+.registros__rowSearch-icon
+{
+    color: var(--placeholder-color);
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+}
+::-webkit-datetime-edit-text { color: var(--placeholder-color);}
+::-webkit-datetime-edit-month-field { color: var(--placeholder-color); }
+::-webkit-datetime-edit-day-field { color: var(--placeholder-color); }
+::-webkit-datetime-edit-year-field { color: var(--placeholder-color);; }
+.registros__rowSearch-inputDate::-webkit-calendar-picker-indicator{
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    width: 30px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+
+}
+.pagos-faltantes__fila-titulo
+{
+    position: relative;
+}

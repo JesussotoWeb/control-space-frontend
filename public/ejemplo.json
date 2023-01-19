@@ -10,6 +10,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Trajo varias bobinas",
+        "Abono_total": 100,
+        "Presupuesto_total": 200,
+        "Fecha_registro": "2023-01-20",
         "restauraciones":[
             {
                 "_id": 1,
@@ -47,6 +50,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 220,
+        "Presupuesto_total": 600,
+        "Fecha_registro": "2023-01-21",
         "restauraciones":[
             {
                 "_id": 3,
@@ -73,6 +79,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 20,
+        "Presupuesto_total": 300,
+        "Fecha_registro": "2023-01-20",
         "restauraciones": [
             {
                 "_id": 4,
@@ -99,6 +108,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 280,
+        "Presupuesto_total": 800,
+        "Fecha_registro": "2023-01-22",
         "restauraciones":[
             {
                 "_id": 5,
@@ -125,6 +137,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 700,
+        "Presupuesto_total": 800,
+        "Fecha_registro": "2022-01-20",
         "restauraciones": [
             {
                 "_id": 6,
@@ -150,6 +165,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 20,
+        "Presupuesto_total": 900,
+        "Fecha_registro": "2023-01-20",
         "restauraciones": [
             {
                 "_id": 7,
@@ -175,6 +193,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 220,
+        "Presupuesto_total": 650,
+        "Fecha_registro": "2023-02-20",
         "restauraciones": [
             {
                 "_id": 8,
@@ -200,6 +221,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 20,
+        "Presupuesto_total": 60,
+        "Fecha_registro": "2023-01-20",
         "restauraciones": [
             {
                 "_id": 9,
@@ -225,6 +249,9 @@
             "numero": 1234567899
         },
         "Observaciones": "Lorem ipsum dolor, sit amet",
+        "Abono_total": 220,
+        "Presupuesto_total": 800,
+        "Fecha_registro": "2023-01-15",
         "restauraciones": [
             {
                 "_id": 10,
@@ -245,7 +272,7 @@
                 "Fecha": "02-06-2022",
                 "Abono": 10,
                 "Presupuesto": 60,
-                "Estatus": "En Proceso",
+                "Estatus": "Terminado",
                 "Pago_completado": "Completado"
             },
             {
@@ -256,7 +283,7 @@
                 "Fecha": "02-06-2022",
                 "Abono": 10,
                 "Presupuesto": 60,
-                "Estatus": "En Proceso",
+                "Estatus": "Terminado",
                 "Pago_completado": "Pendiente"
             },
             {

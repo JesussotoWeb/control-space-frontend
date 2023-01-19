@@ -1,0 +1,94 @@
+.btn-i-modal
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.btn-i-modal__icon
+{
+    position: absolute;
+    left: 50%;
+    top: -11px;
+    color: rgb(41, 148, 255);
+    cursor: pointer;
+    z-index: 11;
+    transition: .5s;
+    font-size: 14px;
+    transform: translateX(-50%);
+}
+.btn-i-modal__icon:hover{
+    color: var(--amarillo-color);
+    transition: .5s;
+    font-size: 20px;
+}
+.btn-i-modal__descripcion
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.245);
+    padding: 20px;
+    z-index: 10;
+    top: 0;
+    right: -100px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    width: 22em;
+}
+.btn-i-modal__descripcion_active
+{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+    right: 0;
+
+}
+.btn-i-modal__title
+{
+    font-size: 12px;
+    margin-bottom: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-i-modal__colTitle
+{
+    font-weight: 600;
+    font-size: 12px!important;
+    font-family: Montserrat;
+}
+.btn-i-modal__table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+.btn-i-modal__row
+{
+    position: relative;
+}
+
+.btn-i-modal__col{
+    padding: 5px 10px;
+    line-height: 1;
+    font-size: 12px;
+    font-family: Montserrat;
+}
+.btn-i-modal__col1
+{
+    border-right: 1px solid var(--amarillo-color);
+}
+
+.btn-i-modal__colIcon
+{
+    position: absolute;
+    left: 4px;
+    background-color: var(--amarillo-color);
+    color: white;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

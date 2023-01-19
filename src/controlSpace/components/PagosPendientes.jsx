@@ -1,8 +1,8 @@
-import {IoIosEye} from "react-icons/io";
 import {RxCounterClockwiseClock} from "react-icons/rx";
 import ReactDOM from "react-dom";
 import { useEffect, useState } from "react";
 import DetallesRegistro from "./modales/DetallesRegistro";
+import BotonEje from "./botones/BotonEje";
 
 const PagosPendientes = () => {
   const [apiData, setApiData] = useState([]);
@@ -68,7 +68,12 @@ apiData.map((content) => {
                   return (
                     <tr key={index} className="pagos-faltantes__fila">
                       <td className="pagos-faltantes__fila-columna">
-                        <span onClick={() => eventoLevantarModalRegistros(content.cedula)} className="pagos-faltantes__btnMostrarData"><IoIosEye/></span>{verificarPagoCompletado(content.pago_completado)}<i className="pagos-faltantes__btnMostrarData-i">{content.pago_completado}</i></td>
+                        <BotonEje 
+                        url={content.cedula} 
+                        customClass="pagos-faltantes__btnMostrarData"
+                        />
+
+                        {verificarPagoCompletado(content.pago_completado)}<i className="pagos-faltantes__btnMostrarData-i">{content.pago_completado}</i></td>
                       <td className="pagos-faltantes__fila-columna">{content.nombre} {content.apellido}</td>
                       <td className="pagos-faltantes__fila-columna">{content.restauraciones}</td>
                       <td className="pagos-faltantes__fila-columna">{content.observaciones}</td>
